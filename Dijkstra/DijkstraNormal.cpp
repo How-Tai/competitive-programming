@@ -4,7 +4,7 @@
   vertices are numbered 0, 1, ..., n-1
   graph[u] contains pairs {weight, neighbor}
   
-  Time Complexity: O(m log n)
+  Time Complexity: O((n + m) log n)
   Memory Complexity: O(n + m)
 
   NOTE: This code is not overflow safe, C++ int type can store number from -2^31 to 2^31 - 1
