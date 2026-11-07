@@ -25,3 +25,4 @@ signed main() {
 		cin >> u >> v;
 		cout << pref[v-1] - (u-1 ? pref[u-2] : 0) << '\n';
 	}
+}
