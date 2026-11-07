@@ -31,7 +31,10 @@ vector<int> dijkstra(int n, int m, int start, vector<vector<pair<int, int>>> gra
       if(dist[u] + nw < dist[v]) {
         dist[v] = dist[u] + nw;
         pq.push({dist[v], v});
+      }
     }
   }
+  
   return dist;
+  
 }
