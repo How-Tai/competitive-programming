@@ -18,7 +18,7 @@ int main() {
         for(int i = 0; i < n; ++i) {
             if('a' <= s[i] && s[i] <= 'z') stk.push_back(s[i]);
             else if('A' <= s[i] && s[i] <= 'Z') {
-                if(stk.back() != tolower(s[i])) { y = 0; idx = i; break; }
+                if(stk.empty() || stk.back() != tolower(s[i])) { y = 0; idx = i; break; }
                 else stk.pop_back();
             }
             mx = max(mx, (int)stk.size());
